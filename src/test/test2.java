@@ -8,7 +8,8 @@ import java.util.Random;
 public class test2 {
 
     //定义全局变量
-	public static int[] = new int[200];
+	public static int[] = new int[200];//the first change
+	public static int[] = new int[888];//the second change
     public static String[] arrB;
     public static int[][] Graph;
     public static int INF = 999;
