@@ -11,12 +11,12 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Test2 {
+public final class Test2 { // NOPMD by ACMeow on 17-10-20 下午1:46
 
   //定义全局变量
   public static String[] arrB;
-  public static int[][] Graph;
-  public static int INF = 999;
+  public static int[][] graph;
+  public static final int INF = 999;
   public static int[][] dist;
 
   //随机游走
@@ -39,7 +39,7 @@ public class Test2 {
       int t = 0;
       int[] arrNum = new int[100];
       for (int i = 0; i < arrB.length; i++) {
-        if (Graph[p1][i] != 0) {
+        if (graph[p1][i] != 0) {
           arrNum[t] = i;
           t++;
         }
@@ -57,10 +57,8 @@ public class Test2 {
       boolean isTrue = false;
       if (u > 3) {
         for (int j = 0; j < u - 2; j++) {
-          if (edgeNum[j] == edgeNum[u - 2]) {
-            if (edgeNum[j + 1] == edgeNum[u - 1]) {
-              isTrue = true;
-            }
+          if (edgeNum[j] == edgeNum[u - 2] && edgeNum[j + 1] == edgeNum[u - 1]) {
+            isTrue = true;
           }
         }
         if (isTrue) {
@@ -80,12 +78,14 @@ public class Test2 {
    * @return .
    */
   public static int getPosition(String[] x,String y) {
+    int res = -1;
     for (int i = 0; i < x.length; i++) {
       if (x[i].equals(y)) { //string类型中为内容是否一致
-        return i;
+        res = i;
+        break;
       }
     }
-    return -1;
+    return res;
   }
 
   //桥接词查询函数
@@ -98,30 +98,27 @@ public class Test2 {
     int p2 = getPosition(arrB, word2);
     String bridge = "";
     if (p1 == -1 && p2 == -1) {
-      return ("situation1");
+      bridge = "situation1";
     } else if (p1 == -1 && p2 != -1) {
-      return ("situation2");
+      bridge = "situation2";
     } else if (p1 != -1 && p2 == -1) {
-      return ("situation3");
+      bridge = "situation3";
     } else {
       for (int i = 0; i < arrB.length; i++) {
-        if (Graph[p1][i] != 0) {
+        if (graph[p1][i] != 0) {
           for (int j = 0; j < arrB.length; j++) {
-            if (Graph[i][j] != 0) {
-              if (arrB[j].equals(word2)) {
-                bridge = bridge + arrB[i];
-                bridge = bridge + " ";
-              }
+            if (graph[i][j] != 0 && arrB[j].equals(word2)) {
+              bridge = bridge + arrB[i];
+              bridge = bridge + " ";
             }
           }
         }
       }
     }
     if (bridge.equals(" ")) {
-      return ("situation4");
-    } else {
-      return (bridge);
+      bridge = "situation4";
     }
+    return bridge;
   }
   
   //根据bridge word生成新文本
@@ -130,8 +127,8 @@ public class Test2 {
    * @return .
    */
   public static String generateNewText(String inputText) {
-    String[] arrC = inputText.toLowerCase().split("\\s+");
-    String[] tempArrC = new String[arrC.length * 2];
+    final String[] arrC = inputText.toLowerCase().split("\\s+");
+    final String[] tempArrC = new String[arrC.length * 2];
     int m = 0;
     for (int i = 0; i < arrC.length - 1; i++) {
       tempArrC[m] = arrC[i];
@@ -157,12 +154,12 @@ public class Test2 {
     System.out.println(Arrays.toString(tempArrC));
     String outputText = "";
     for (int i = 0; i < m + 1; i++) {
-      if (tempArrC[i] != "") {
+      if (!tempArrC[i].equals("")) {
         outputText = outputText + tempArrC[i];
         outputText = outputText + " ";
       }
     }
-    return (outputText);
+    return outputText;
   }
 
   //计算最短路径
@@ -178,10 +175,10 @@ public class Test2 {
     // 初始化
     for (int i = 0; i < arrB.length; i++) {
       for (int j = 0; j < arrB.length; j++) {
-        if (Graph[i][j] == 0) {
+        if (graph[i][j] == 0) {
           dist[i][j] = INF;
         } else {
-          dist[i][j] = Graph[i][j];
+          dist[i][j] = graph[i][j];
         }
         path[i][j] = -1;
       }
@@ -190,7 +187,7 @@ public class Test2 {
       for (int i = 0; i < arrB.length; i++) {
         for (int j = 0; j < arrB.length; j++) {
           // 如果经过下标为k顶点路径比原两点间路径更短，则更新dist[i][j]和path[i][j]
-          int tmp = (dist[i][k] == INF || dist[k][j] == INF) ? INF : (dist[i][k] + dist[k][j]);
+          int tmp = dist[i][k] == INF || dist[k][j] == INF ? INF : dist[i][k] + dist[k][j];
           if (dist[i][j] > tmp) {
             dist[i][j] = tmp;
             path[i][j] = k;
@@ -267,16 +264,16 @@ public class Test2 {
     System.arraycopy(tempArray,0,arrB,0,t);
 
     //邻接矩阵构建有向图
-    Graph = new int[arrB.length][arrB.length];
+    graph = new int[arrB.length][arrB.length];
     for (int i = 0; i < arrA.length - 1; i++) {
       int j;
       int m;
       j = getPosition(arrB, arrA[i]);
       m = getPosition(arrB, arrA[i + 1]);
-      if (Graph[j][m] == 0) {
-        Graph[j][m] = 1;
+      if (graph[j][m] == 0) {
+        graph[j][m] = 1;
       } else {
-        Graph[j][m]++;
+        graph[j][m]++;
       }
     }
 
@@ -298,13 +295,13 @@ public class Test2 {
       if (userchoice == 1) { //功能二  展示有向图
         for (int i = 0; i < arrB.length; i++) {
           for (int j = 0; j < arrB.length; j++) {
-            System.out.printf("%d", Graph[i][j]);
+            System.out.printf("%d", graph[i][j]);
           }
           System.out.printf("\n");
         }
         System.out.println(Arrays.toString(arrA));  //输出原始数组
         System.out.println(Arrays.toString(arrB));  //输出顶点数组
-        File file1 = new File("c:/GRAPH","Graph.dot");
+        File file1 = new File("c:/graph","graph.dot");
         try {
           file1.createNewFile();
         } catch (IOException e) {
@@ -318,9 +315,9 @@ public class Test2 {
           }
           for (int i = 0; i < arrB.length; i++) {
             for (int j = 0; j < arrB.length; j++) {
-              if (Graph[i][j] != 0) {
+              if (graph[i][j] != 0) {
                 newFile.write(arrB[i] + "->" + arrB[j] + "[label = "
-                    + Graph[i][j] + "]" + ";" + "\r\n\t");
+                    + graph[i][j] + "]" + ";" + "\r\n\t");
               }
             }
           }
@@ -329,12 +326,12 @@ public class Test2 {
         } catch (IOException e) {
           e.printStackTrace();
         }
-        String shell = "dot -Tgif -o output.gif Graph.dot";
+        String shell = "dot -Tgif -o output.gif graph.dot";
         try {
-          Runtime.getRuntime().exec(shell,null,new File("c:/GRAPH"));
-          //Runtime.getRuntime().exec("output.gif",null,new File("c:/GRAPH"));
+          Runtime.getRuntime().exec(shell,null,new File("c:/graph"));
+          //Runtime.getRuntime().exec("output.gif",null,new File("c:/graph"));
 
-        } catch (Exception e) {
+        } catch (IOException e) {
           e.printStackTrace();
         }
       } else if (userchoice == 2) { //功能三 查询桥接词
