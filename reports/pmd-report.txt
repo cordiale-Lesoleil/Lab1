@@ -1,0 +1,275 @@
+src/test/Test2.java:14:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/test/Test2.java:14:	The class 'Test2' has a Cyclomatic Complexity of 14 (Highest = 33).
+src/test/Test2.java:14:	The class 'Test2' has a Modified Cyclomatic Complexity of 13 (Highest = 33).
+src/test/Test2.java:14:	The class 'Test2' has a Standard Cyclomatic Complexity of 13 (Highest = 33).
+src/test/Test2.java:14:	headerCommentRequirement Required
+src/test/Test2.java:17:	fieldCommentRequirement Required
+src/test/Test2.java:18:	Variables should start with a lowercase character, 'Graph' starts with uppercase character.
+src/test/Test2.java:18:	fieldCommentRequirement Required
+src/test/Test2.java:19:	fieldCommentRequirement Required
+src/test/Test2.java:20:	fieldCommentRequirement Required
+src/test/Test2.java:27:	The method 'randomWalk' has a Cyclomatic Complexity of 11.
+src/test/Test2.java:27:	The method 'randomWalk' has a Modified Cyclomatic Complexity of 11.
+src/test/Test2.java:27:	The method 'randomWalk' has a Standard Cyclomatic Complexity of 11.
+src/test/Test2.java:28:	Local variable 'ran1' could be declared final
+src/test/Test2.java:29:	Avoid variables with short names like p1
+src/test/Test2.java:30:	Avoid variables with short names like u
+src/test/Test2.java:31:	Found 'DD'-anomaly for variable 'edgeNum' (lines '31'-'32').
+src/test/Test2.java:32:	Found 'DD'-anomaly for variable 'edgeNum' (lines '32'-'55').
+src/test/Test2.java:32:	Found 'DU'-anomaly for variable 'edgeNum' (lines '32'-'75').
+src/test/Test2.java:34:	Found 'DD'-anomaly for variable 'randword' (lines '34'-'35').
+src/test/Test2.java:35:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:36:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:37:	System.out.println is used
+src/test/Test2.java:39:	Avoid variables with short names like t
+src/test/Test2.java:40:	Avoid instantiating new objects inside loops
+src/test/Test2.java:40:	Found 'DD'-anomaly for variable 'arrNum' (lines '40'-'43').
+src/test/Test2.java:40:	Found 'DU'-anomaly for variable 'arrNum' (lines '40'-'75').
+src/test/Test2.java:43:	Found 'DD'-anomaly for variable 'arrNum' (lines '43'-'43').
+src/test/Test2.java:43:	Found 'DU'-anomaly for variable 'arrNum' (lines '43'-'75').
+src/test/Test2.java:47:	System.out.println is used
+src/test/Test2.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:53:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:54:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:55:	Found 'DU'-anomaly for variable 'edgeNum' (lines '55'-'75').
+src/test/Test2.java:57:	Found 'DD'-anomaly for variable 'isTrue' (lines '57'-'62').
+src/test/Test2.java:57:	Found 'DU'-anomaly for variable 'isTrue' (lines '57'-'75').
+src/test/Test2.java:58:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:61:	Deeply nested if..then statements are hard to read
+src/test/Test2.java:61:	These nested if statements could be combined
+src/test/Test2.java:62:	Found 'DD'-anomaly for variable 'isTrue' (lines '62'-'62').
+src/test/Test2.java:72:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:72:	System.out.printf is used
+src/test/Test2.java:82:	Avoid variables with short names like x
+src/test/Test2.java:82:	Avoid variables with short names like y
+src/test/Test2.java:82:	Parameter 'x' is not assigned and could be declared final
+src/test/Test2.java:82:	Parameter 'y' is not assigned and could be declared final
+src/test/Test2.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:85:	A method should have only one exit point, and that should be the last statement in the method
+src/test/Test2.java:96:	Parameter 'word1' is not assigned and could be declared final
+src/test/Test2.java:96:	Parameter 'word2' is not assigned and could be declared final
+src/test/Test2.java:96:	The method 'queryBridgeWords' has a Cyclomatic Complexity of 13.
+src/test/Test2.java:96:	The method 'queryBridgeWords' has a Modified Cyclomatic Complexity of 10.
+src/test/Test2.java:96:	The method 'queryBridgeWords' has a Standard Cyclomatic Complexity of 10.
+src/test/Test2.java:97:	Avoid variables with short names like p1
+src/test/Test2.java:97:	Local variable 'p1' could be declared final
+src/test/Test2.java:98:	Avoid variables with short names like p2
+src/test/Test2.java:98:	Local variable 'p2' could be declared final
+src/test/Test2.java:99:	Found 'DD'-anomaly for variable 'bridge' (lines '99'-'112').
+src/test/Test2.java:99:	Found 'DU'-anomaly for variable 'bridge' (lines '99'-'125').
+src/test/Test2.java:101:	A method should have only one exit point, and that should be the last statement in the method
+src/test/Test2.java:101:	This statement may have some unnecessary parentheses
+src/test/Test2.java:101:	Useless parentheses.
+src/test/Test2.java:103:	A method should have only one exit point, and that should be the last statement in the method
+src/test/Test2.java:103:	This statement may have some unnecessary parentheses
+src/test/Test2.java:103:	Useless parentheses.
+src/test/Test2.java:105:	A method should have only one exit point, and that should be the last statement in the method
+src/test/Test2.java:105:	This statement may have some unnecessary parentheses
+src/test/Test2.java:105:	Useless parentheses.
+src/test/Test2.java:111:	Deeply nested if..then statements are hard to read
+src/test/Test2.java:111:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:111:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:111:	These nested if statements could be combined
+src/test/Test2.java:112:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:113:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:120:	Position literals first in String comparisons
+src/test/Test2.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:121:	A method should have only one exit point, and that should be the last statement in the method
+src/test/Test2.java:121:	This statement may have some unnecessary parentheses
+src/test/Test2.java:121:	Useless parentheses.
+src/test/Test2.java:123:	This statement may have some unnecessary parentheses
+src/test/Test2.java:123:	Useless parentheses.
+src/test/Test2.java:132:	Parameter 'inputText' is not assigned and could be declared final
+src/test/Test2.java:133:	Local variable 'arrC' could be declared final
+src/test/Test2.java:133:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:133:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/test/Test2.java:134:	Found 'DD'-anomaly for variable 'tempArrC' (lines '134'-'137').
+src/test/Test2.java:134:	Found 'DD'-anomaly for variable 'tempArrC' (lines '134'-'156').
+src/test/Test2.java:135:	Avoid variables with short names like m
+src/test/Test2.java:137:	Found 'DD'-anomaly for variable 'tempArrC' (lines '137'-'137').
+src/test/Test2.java:137:	Found 'DD'-anomaly for variable 'tempArrC' (lines '137'-'152').
+src/test/Test2.java:137:	Found 'DD'-anomaly for variable 'tempArrC' (lines '137'-'156').
+src/test/Test2.java:139:	Avoid variables with short names like br
+src/test/Test2.java:139:	Local variable 'br' could be declared final
+src/test/Test2.java:139:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:139:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:140:	Avoid variables with short names like n
+src/test/Test2.java:140:	Found 'DD'-anomaly for variable 'n' (lines '140'-'142').
+src/test/Test2.java:140:	Found 'DD'-anomaly for variable 'n' (lines '140'-'144').
+src/test/Test2.java:140:	Found 'DD'-anomaly for variable 'n' (lines '140'-'146').
+src/test/Test2.java:140:	Found 'DD'-anomaly for variable 'n' (lines '140'-'148').
+src/test/Test2.java:141:	Position literals first in String comparisons
+src/test/Test2.java:141:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:143:	Position literals first in String comparisons
+src/test/Test2.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:145:	Position literals first in String comparisons
+src/test/Test2.java:145:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:147:	Position literals first in String comparisons
+src/test/Test2.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:151:	Local variable 'arrD' could be declared final
+src/test/Test2.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:152:	Found 'DD'-anomaly for variable 'tempArrC' (lines '152'-'137').
+src/test/Test2.java:152:	Found 'DD'-anomaly for variable 'tempArrC' (lines '152'-'156').
+src/test/Test2.java:157:	System.out.println is used
+src/test/Test2.java:158:	Found 'DD'-anomaly for variable 'outputText' (lines '158'-'161').
+src/test/Test2.java:160:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:160:	Use equals() to compare strings instead of '==' or '!='
+src/test/Test2.java:161:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:162:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:165:	This statement may have some unnecessary parentheses
+src/test/Test2.java:165:	Useless parentheses.
+src/test/Test2.java:173:	Parameter 'word1' is not assigned and could be declared final
+src/test/Test2.java:173:	Parameter 'word2' is not assigned and could be declared final
+src/test/Test2.java:173:	The method 'calcShortestPath' has a Cyclomatic Complexity of 13.
+src/test/Test2.java:173:	The method 'calcShortestPath' has a Modified Cyclomatic Complexity of 12.
+src/test/Test2.java:173:	The method 'calcShortestPath' has a Standard Cyclomatic Complexity of 12.
+src/test/Test2.java:173:	The method calcShortestPath() has an NPath complexity of 624
+src/test/Test2.java:174:	Found 'DD'-anomaly for variable 'path' (lines '174'-'186').
+src/test/Test2.java:176:	Avoid variables with short names like p1
+src/test/Test2.java:176:	Local variable 'p1' could be declared final
+src/test/Test2.java:177:	Avoid variables with short names like p2
+src/test/Test2.java:186:	Found 'DD'-anomaly for variable 'path' (lines '186'-'186').
+src/test/Test2.java:186:	Found 'DD'-anomaly for variable 'path' (lines '186'-'196').
+src/test/Test2.java:193:	Local variable 'tmp' could be declared final
+src/test/Test2.java:193:	Useless parentheses.
+src/test/Test2.java:193:	Useless parentheses.
+src/test/Test2.java:196:	Found 'DD'-anomaly for variable 'path' (lines '196'-'196').
+src/test/Test2.java:201:	Found 'DD'-anomaly for variable 'shortText' (lines '201'-'204').
+src/test/Test2.java:202:	Found 'DD'-anomaly for variable 'shortPath' (lines '202'-'209').
+src/test/Test2.java:202:	Found 'DD'-anomaly for variable 'shortPath' (lines '202'-'211').
+src/test/Test2.java:204:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:207:	Local variable 'shortArray' could be declared final
+src/test/Test2.java:207:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:208:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:208:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:215:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:216:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:218:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:226:	Avoid really long methods.
+src/test/Test2.java:226:	Parameter 'args' is not assigned and could be declared final
+src/test/Test2.java:226:	The method 'main' has a Cyclomatic Complexity of 33.
+src/test/Test2.java:226:	The method 'main' has a Modified Cyclomatic Complexity of 33.
+src/test/Test2.java:226:	The method 'main' has a Standard Cyclomatic Complexity of 33.
+src/test/Test2.java:226:	The method main() has an NCSS line count of 144
+src/test/Test2.java:226:	The method main() has an NPath complexity of 15309
+src/test/Test2.java:227:	Found 'DD'-anomaly for variable 'txtString' (lines '227'-'244').
+src/test/Test2.java:228:	Local variable 'fileName' could be declared final
+src/test/Test2.java:229:	Found 'DD'-anomaly for variable 'line' (lines '229'-'235').
+src/test/Test2.java:233:	Avoid variables with short names like in
+src/test/Test2.java:233:	Local variable 'in' could be declared final
+src/test/Test2.java:237:	Prefer StringBuffer over += for concatenating strings
+src/test/Test2.java:242:	System.out.println is used
+src/test/Test2.java:244:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:246:	Avoid printStackTrace(); use a logger call instead.
+src/test/Test2.java:248:	Local variable 'arrA' could be declared final
+src/test/Test2.java:248:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:248:	Potential violation of Law of Demeter (object not created locally)
+src/test/Test2.java:248:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/test/Test2.java:251:	Avoid variables with short names like t
+src/test/Test2.java:252:	Found 'DD'-anomaly for variable 'tempArray' (lines '252'-'262').
+src/test/Test2.java:254:	Found 'DD'-anomaly for variable 'isTrue' (lines '254'-'257').
+src/test/Test2.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:262:	Found 'DD'-anomaly for variable 'tempArray' (lines '262'-'262').
+src/test/Test2.java:272:	Avoid variables with short names like j
+src/test/Test2.java:273:	Avoid variables with short names like m
+src/test/Test2.java:274:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:275:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:284:	Local variable 'scan1' could be declared final
+src/test/Test2.java:285:	Found 'DU'-anomaly for variable 'scan2' (lines '285'-'406').
+src/test/Test2.java:285:	Local variable 'scan2' could be declared final
+src/test/Test2.java:286:	System.out.println is used
+src/test/Test2.java:287:	System.out.println is used
+src/test/Test2.java:288:	System.out.println is used
+src/test/Test2.java:289:	System.out.println is used
+src/test/Test2.java:290:	System.out.println is used
+src/test/Test2.java:291:	System.out.println is used
+src/test/Test2.java:292:	System.out.println is used
+src/test/Test2.java:294:	Local variable 'userchoice' could be declared final
+src/test/Test2.java:298:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:301:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:301:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:301:	System.out.printf is used
+src/test/Test2.java:303:	System.out.printf is used
+src/test/Test2.java:305:	System.out.println is used
+src/test/Test2.java:306:	System.out.println is used
+src/test/Test2.java:307:	Avoid instantiating new objects inside loops
+src/test/Test2.java:307:	Local variable 'file1' could be declared final
+src/test/Test2.java:311:	Avoid printStackTrace(); use a logger call instead.
+src/test/Test2.java:314:	Avoid instantiating new objects inside loops
+src/test/Test2.java:314:	Local variable 'newFile' could be declared final
+src/test/Test2.java:317:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:322:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:322:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:322:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:322:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:330:	Avoid printStackTrace(); use a logger call instead.
+src/test/Test2.java:332:	Local variable 'shell' could be declared final
+src/test/Test2.java:334:	Avoid instantiating new objects inside loops
+src/test/Test2.java:337:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/test/Test2.java:338:	Avoid printStackTrace(); use a logger call instead.
+src/test/Test2.java:340:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:341:	System.out.println is used
+src/test/Test2.java:342:	System.out.println is used
+src/test/Test2.java:343:	Local variable 'word1' could be declared final
+src/test/Test2.java:344:	System.out.println is used
+src/test/Test2.java:345:	Local variable 'word2' could be declared final
+src/test/Test2.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:347:	System.out.printf is used
+src/test/Test2.java:348:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:349:	System.out.printf is used
+src/test/Test2.java:350:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:351:	System.out.printf is used
+src/test/Test2.java:352:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:353:	System.out.printf is used
+src/test/Test2.java:355:	Local variable 'bridgeword' could be declared final
+src/test/Test2.java:356:	System.out.printf is used
+src/test/Test2.java:359:	System.out.printf is used
+src/test/Test2.java:360:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:361:	System.out.println is used
+src/test/Test2.java:362:	Local variable 'txtString2' could be declared final
+src/test/Test2.java:363:	Local variable 'txtString3' could be declared final
+src/test/Test2.java:364:	System.out.println is used
+src/test/Test2.java:365:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:366:	System.out.println is used
+src/test/Test2.java:367:	Local variable 'word3' could be declared final
+src/test/Test2.java:368:	System.out.println is used
+src/test/Test2.java:369:	Local variable 'word4' could be declared final
+src/test/Test2.java:370:	Avoid variables with short names like p1
+src/test/Test2.java:370:	Local variable 'p1' could be declared final
+src/test/Test2.java:371:	Avoid variables with short names like p2
+src/test/Test2.java:371:	Local variable 'p2' could be declared final
+src/test/Test2.java:372:	Found 'DU'-anomaly for variable 'shortword' (lines '372'-'406').
+src/test/Test2.java:372:	Local variable 'shortword' could be declared final
+src/test/Test2.java:374:	System.out.printf is used
+src/test/Test2.java:375:	System.out.printf is used
+src/test/Test2.java:377:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:377:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:377:	System.out.printf is used
+src/test/Test2.java:379:	System.out.printf is used
+src/test/Test2.java:381:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:382:	System.out.println is used
+src/test/Test2.java:383:	Local variable 'word5' could be declared final
+src/test/Test2.java:384:	Avoid variables with short names like p3
+src/test/Test2.java:384:	Found 'DU'-anomaly for variable 'p3' (lines '384'-'406').
+src/test/Test2.java:384:	Local variable 'p3' could be declared final
+src/test/Test2.java:386:	Avoid variables with short names like ss
+src/test/Test2.java:386:	Found 'DD'-anomaly for variable 'ss' (lines '386'-'386').
+src/test/Test2.java:386:	Found 'DU'-anomaly for variable 'ss' (lines '386'-'406').
+src/test/Test2.java:386:	Local variable 'ss' could be declared final
+src/test/Test2.java:386:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:388:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:388:	System.out.printf is used
+src/test/Test2.java:389:	System.out.printf is used
+src/test/Test2.java:391:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:391:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:391:	Potential violation of Law of Demeter (method chain calls)
+src/test/Test2.java:391:	System.out.printf is used
+src/test/Test2.java:393:	System.out.printf is used
+src/test/Test2.java:396:	Avoid using Literals in Conditional Statements
+src/test/Test2.java:397:	Local variable 'randword' could be declared final
+src/test/Test2.java:398:	System.out.println is used
+src/test/Test2.java:399:	System.out.println is used
+src/test/Test2.java:401:	System.out.println is used
